@@ -8,9 +8,9 @@ Created on Thu Jun 16 11:24:44 2022
 from src import *
 import numpy as np
 import pandas as pd
-import obspy
-import multiprocessing
-import os
+# import obspy
+# import multiprocessing
+# import os
 
 def unperturbed(t, y, tf, dt, pars):
     """
@@ -91,16 +91,13 @@ def triggered(t, y, tb, tf, dt, pars, st, CFF, factor):
         initial time step.
     pars : dictionary
         parameters.
-    st : numpy array
-        a trace waveform or synthetic signal.
-    CFF : TYPE
-        DESCRIPTION.
-    factor : TYPE
-        DESCRIPTION.
+    st : dynamic triggering
+    CFF : Static triggering
+    factor : to amplify dynamic triggering signal
 
     Returns
     -------
-    None.
+    solution dataframe.
 
     """
     
