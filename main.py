@@ -4,15 +4,17 @@
 Created on Mon Aug  1 17:49:40 2022
 
 @author: esopaci
+contact eyup.sopaci@metu.edu.tr
 """
 
 from src import *
 from process import *
-# import numpy as np
-# import pandas as pd
+import numpy as np
+import pandas as pd
 import obspy
 import multiprocessing
 import os
+from itertools import repeat    
 
 def main():
     
@@ -74,7 +76,6 @@ def main():
     st.decimate(10)
     st[0].data[-20:]=0; st[0].data[:20]=0
     
-    from itertools import repeat    
     
 
     tbs = [x**1.1 for x in np.arange(0.5,32)]
