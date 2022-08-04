@@ -3,14 +3,13 @@
 """
 Created on Thu Jun 16 11:24:44 2022
 
-@author: gauss
+@author: esopaci
+contact eyup.sopaci@metu.edu.tr
 """
 from src import *
 import numpy as np
 import pandas as pd
-# import obspy
-# import multiprocessing
-# import os
+
 
 def unperturbed(t, y, tf, dt, pars):
     """
